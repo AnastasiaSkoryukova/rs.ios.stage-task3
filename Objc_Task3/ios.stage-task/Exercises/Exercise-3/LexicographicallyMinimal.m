@@ -38,23 +38,23 @@
         
         
         
-        if ([string1Mutable length] == 0) {
-            
-                [answerMutable appendString:string2Mutable];
-            
-        }
-        else if ([string2Mutable length] == 0) {
-                
-                    [answerMutable appendString:string1Mutable];
-                   
-                }
-            
         
-        answer = [answerMutable copy];
         
         }
         
+    if ([string1Mutable length] == 0) {
         
+            [answerMutable appendString:string2Mutable];
+        
+    }
+    else if ([string2Mutable length] == 0) {
+            
+                [answerMutable appendString:string1Mutable];
+               
+            }
+        
+    
+    answer = [answerMutable copy];
         
         return answer;
     }
